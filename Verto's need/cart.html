@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Webpage</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="fixed">
+            <div class="navbar">
+                <div class="nav_logo border">
+                    <h2>Verto's</h2><h3>store</h3>
+                </div>
+    
+                <div class="nav-address border large">
+                    <p class="add-first">Deliver in</p>
+                    <div class="add-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="add-second"><a href="https://www.lpu.in/">LPU</a></p>
+                    </div>
+                </div>
+    
+                <div class="nav-search">
+                    <select class="search-select">
+                        <option>All</option>
+                    </select>
+                    <input placeholder="Search Verto's store" class="search-input">
+                    <div class="search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+    
+                <div class="nav-signin border large">
+                    <p><span>Your</span></p>
+                    <p class="nav-second"><a href="#">Account</a></p>
+                </div>
+    
+                <div class="nav-return border large">
+                    <p><span>Your</span></p>
+                    <p class="nav-second"><a href="#">Orders</a></p>
+                </div>
+    
+                <div class="nav-cart border large">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <a href="#" onclick="showCart()">Cart <span class="cart-badge" id="cart-count">0</span></a>
+                </div>
+            </div>
+    
+            <div class="panel">
+                <div class="panel-all border">
+                    <i class="fa-solid fa-bars"></i>
+                    All
+                </div>
+                <div class="panel-ops">
+                    <a class="border" href="home.html">Home</a>
+                    <a class="border" href="blog.html">Blogs</a>
+                    <a class="border" href="services.html">Services</a>
+                    <a class="border" href="about_us.html">AboutUs</a>
+                    <a class="border" href="contact_us.html">ContactUs</a>
+                </div>
+                <div class="panel-deals border">
+                    Shop At Affordable Price
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="shop-section">
+        <div class="shop-section shopsection">
+            <div class="product box1 box" data-id="1" data-price="20">
+                <div class="box-content">
+                    <div class="box-imgg boxx" style="background-image: url('po1.jpg');"></div>
+                    <h2>Wireless Headphones Running Bluetooth 5.3</h2>
+                    <p>Price: $20.00</p>
+                    <div class="buy">
+                        <div class="addto">
+                            <button onclick="addToCart('Wireless Headphones Running Bluetooth 5.3', 20)">Add to Cart</button>
+                        </div>
+                        <div class="buyn">
+                            <a href="order.html">Buy Now</a>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="product box1 box" data-id="2" data-price="15">
+                <div class="box-content">
+                    <div class="box-imgg boxx" style="background-image: url('po2.jpg');"></div>
+                    <h2>TBI Pro PowerPro Sport Bluetooth</h2>
+                    <p>Price: $15.00</p>
+                    <div class="buy">
+                        <div class="addto">
+                            <button onclick="addToCart('TBI Pro PowerPro Sport Bluetooth', 15)">Add to Cart</button>
+                        </div>
+                        <div class="buyn">
+                            <a href="order.html">Buy Now</a>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="product box1 box" data-id="3" data-price="10">
+                <div class="box-content">
+                    <div class="box-imgg boxx" style="background-image: url('po3.jpg');"></div>
+                    <h2>Noise Aura Buds in-Ear Truly Wireless Earbuds</h2>
+                    <p>Price: $10.00</p>
+                    <div class="buy">
+                        <div class="addto">
+                            <button onclick="addToCart('Noise Aura Buds in-Ear Truly Wireless Earbuds', 10)">Add to Cart</button>
+                        </div>
+                        <div class="buyn">
+                            <a href="order.html">Buy Now</a>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="product box1 box" data-id="4" data-price="12">
+                <div class="box-content">
+                    <div class="box-imgg boxx" style="background-image: url('po4.jpg');"></div>
+                    <h2>Noise Buds VS104 Truly Wireless Earbuds</h2>
+                    <p>Price: $12.00</p>
+                    <div class="buy">
+                        <div class="addto">
+                            <button onclick="addToCart('Noise Buds VS104 Truly Wireless Earbuds', 12)">Add to Cart</button>
+                        </div>
+                        <div class="buyn">
+                            <a href="order.html">Buy Now</a>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="product box1 box" data-id="5" data-price="8">
+                <div class="box-content">
+                    <div class="box-imgg boxx" style="background-image: url('product1.jpg');"></div>
+                    <h2>HAMMER Aeromax ANC (32dB) TWS, BTv5.4</h2>
+                    <p>Price: $8.00</p>
+                    <div class="buy">
+                        <div class="addto">
+                            <button onclick="addToCart('HAMMER Aeromax ANC (32dB) TWS, BTv5.4', 8)">Add to Cart</button>
+                        </div>
+                        <div class="buyn">
+                            <a href="order.html">Buy Now</a>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="product box1 box" data-id="6" data-price="14">
+                <div class="box-content">
+                    <div class="box-imgg boxx" style="background-image: url('po5.jpg');"></div>
+                    <h2>Wireless Earbuds, Bluetooth 5.3</h2>
+                    <p>Price: $14.00</p>
+                    <div class="buy">
+                        <div class="addto">
+                            <button onclick="addToCart('Wireless Earbuds, Bluetooth 5.3', 14)">Add to Cart</button>
+                        </div>
+                        <div class="buyn">
+                            <a href="order.html">Buy Now</a>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="product box1 box" data-id="7" data-price="16">
+                <div class="box-content">
+                    <div class="box-imgg boxx" style="background-image: url('po6.jpg');"></div>
+                    <h2>SOUNDPEATS TrueWings True Wireless Earbuds</h2>
+                    <p>Price: $16.00</p>
+                    <div class="buy">
+                        <div class="addto">
+                            <button onclick="addToCart('SOUNDPEATS TrueWings True Wireless Earbuds Over Ear Hooks Bluetooth ', 16)">Add to Cart</button>
+                        </div>
+                        <div class="buyn">
+                            <a href="order.html">Buy Now</a>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="product box1 box" data-id="8" data-price="18">
+                <div class="box-content">
+                    <div class="box-imgg boxx" style="background-image: url('po7.jpg');"></div>
+                    <h2>9 Best Wireless Earbuds Ear Hook</h2>
+                    <p>Price: $18.00</p>
+                    <div class="buy">
+                        <div class="addto">
+                            <button onclick="addToCart('9 Best Wireless Earbuds Ear Hook', 18)">Add to Cart</button>
+                        </div>
+                        <div class="buyn">
+                            <a href="order.html">Buy Now</a>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="product box1 box" data-id="9" data-price="13">
+                <div class="box-content">
+                    <div class="box-imgg boxx" style="background-image: url('po8.jpg');"></div>
+                    <h2>FiiO UTWS5 Amplifier Bluetooth Earbuds Hook</h2>
+                    <p>Price: $13.00</p>
+                    <div class="buy">
+                        <div class="addto">
+                            <button onclick="addToCart('FiiO UTWS5 Amplifier Bluetooth Earbuds Hook', 13)">Add to Cart</button>
+                        </div>
+                        <div class="buyn">
+                            <a href="order.html">Buy Now</a>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="product box1 box" data-id="10" data-price="17">
+                <div class="box-content">
+                    <div class="box-imgg boxx" style="background-image: url('po9.jpg');"></div>
+                    <h2>Wireless Earbuds Sports Chstarina Bluetooth 5.1</h2>
+                    <p>Price: $17.00</p>
+                    <div class="buy">
+                        <div class="addto">
+                            <button onclick="addToCart('Wireless Earbuds Sports Chstarina Bluetooth 5.1 ', 17)">Add to Cart</button>
+                        </div>
+                        <div class="buyn">
+                            <a href="order.html">Buy Now</a>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="product box1 box" data-id="11" data-price="9">
+                <div class="box-content">
+                    <div class="box-imgg boxx" style="background-image: url('po10.jpg');"></div>
+                    <h2>Bluetooth Earbuds Wireless Ear-hook OWS</h2>
+                    <p>Price: $9.00</p>
+                    <div class="buy">
+                        <div class="addto">
+                            <button onclick="addToCart('Bluetooth Earbuds Wireless Ear-hook OWS Earphones', 9)">Add to Cart</button>
+                        </div>
+                        <div class="buyn">
+                            <a href="order.html">Buy Now</a>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="product box1 box" data-id="12" data-price="12">
+                <div class="box-content">
+                    <div class="box-imgg boxx" style="background-image: url('po11.jpg');"></div>
+                    <h2>Wireless Earbuds, EEEkit True Wireless TWS</h2>
+                    <p>Price: $12.00</p>
+                    <div class="buy">
+                        <div class="addto">
+                            <button onclick="addToCart('Wireless Earbuds, EEEkit True Wireless TWS', 12)">Add to Cart</button>
+                        </div>
+                        <div class="buyn">
+                            <a href="order.html">Buy Now</a>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay" onclick="closeCart()"></div>
+
+    <div class="cart-popup" id="cart">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <div class="total-price" id="total-price"></div>
+        <button onclick="checkout()"><a href="order.html">Checkout</a></button>
+        <button onclick="closeCart()">Close</button>
+    </div>
+
+    <!-- footer -->
+     
+    <footer>
+        <div class="foot-panel1">
+            <div class="sign">
+                <div class="signn">
+                    <div class="signnn">
+                        <a href="#">Sign in</a>
+                    </div>
+                </div>
+                <p>New customer? <a href="#"><span>Click here.</span></a></p>
+            </div>
+        </div>
+
+        <div class="foot-panel2">
+            <div class="footbar1">
+                <h2>QUICK LINKS</h2>
+                <br>
+                <a href="blog.html">Blogs</a>
+                <br><br>
+                <a href="services.html">Services</a>
+                <br><br>
+                <a href="contact_us.html">ContactUs</a>
+                <br><br>
+                <a href="about_us.html">Terms & Conditions</a>
+                <br><br>
+                <a href="about_us.html">Privacy policy</a>
+            </div>
+            <div class="footbar2">
+                <h2>ADDRESS</h2>
+                <br>
+                <h3>Verto's need Pvt. Ltd.</h3>
+                <p>Delhi G.T. Road, Phagwara, Punjab</p>
+                <p>Lovely Professional University,</p>
+                <p>Jalandhar - Delhi G.T. Road,</p>
+                <p>Phagwara, Punjab (India) - 144411</p>
+            </div>
+            <div class="footbar3">
+                <h2>CUSTOMER SERVICE</h2>
+                <br>
+                <p>Call us on +91 9525032372</p>
+                <p>Email: shubh900688@gmail.com</p>
+            </div>
+            <div class="footbar4">
+                <h2>FOLLOW US ON</h2>
+                <br>
+                <div class="follow">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-google-play"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="foot-panel3">
+            <div class="logo2"></div>
+        </div>
+
+        <div class="foot-panel4">
+            <div class="copyright">
+                Copyright &copy; 2024 Verto's need Pvt. Ltd. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>

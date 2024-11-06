@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verto's need</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <div class="fixed">
+            <div class="navbar">
+                <div class="logo"></div>
+                <div class="head">
+                    <a href="home.html"><p>Home</p></a>
+                    <a href="blog.html">Blogs</a>
+                    <a href="services.html">Services</a>
+                    <a href="about_us.html">AboutUs</a>
+                    <a href="contact_us.html">ContactUs</a>
+                </div>
+                <div class="lang">
+                    <p>Choose your language</p>
+                    <select class="select" id="language-selector">
+                        <option value="en">English</option>
+                        <option value="es">Spanish</option>
+                        <option value="fr">French</option>
+                        <option value="de">German</option>
+                        <option value="zh">Chinese</option>
+                        <option value="te">Telugu</option>
+                    </select>
+                </div>
+                <div class="nav-signin borderr">
+                    <p><span>Hello, sign in</span></p>
+                    <p class="nav-second"><a href="#" id="openModal" class="btn">Your Account</a></p>
+                </div>
+            </div>
+    
+            <div class="panel">
+                <div class="panel-all border">
+                    <i class="fa-solid fa-bars"></i>
+                    All
+                </div>
+                <div class="panel-ops">
+                    <a class="border" href="#need1">Verto's store</a>
+                    <a class="border sp" href="#need2">Verto's skills</a>
+                </div>
+                <div class="panel-deals border">
+                    <a href="weather.html">Today's Weather</a>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+
+    <!-- content -->
+    <section id="need1">
+        <div class="space">
+                <div class="outcontainer">
+                    <img src="lpub.jpg" alt="background image">
+                </div>
+                <div class="content">
+                    <div class="store border">
+                        <div class="inner">
+                            <div class="div1">
+                                <h1 id="store-title">Verto's Store</h1>
+                            </div>
+                            <br>
+                            <div class="div2 borderrr">
+                                <div class="div7">
+                                    <h3><u id="buy-title">Buy Products</u></h3>
+                                    <br>
+                                    <p id="buy-description">If you're looking to purchase any product but are concerned about high prices, this platform provides an excellent opportunity...</p>
+                                    <br>
+                                    <div class="div3">
+                                        <a href="store.html">Click Here</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="div4 borderrr">
+                                <div class="div7">
+                                    <h3><u id="sell-title">Sell Products</u></h3>
+                                    <br>
+                                    <p id="sell-description">If you have any product that you no longer use, this platform allows you to sell it at a price you determine...</p>
+                                    <br>
+                                    <div class="div3">
+                                        <a href="sellform.html">Apply Here</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        
+    </section>
+    <section id="need2">
+            
+            <div class="conten">
+                <div class="sticker">
+                    <h1>All Power is Within You;</h1>
+                    <h1>You Can Do Anything And Everything; <span>- Swami Vivekananda</span></h1>
+                </div>
+                
+                <div class="skills border">
+                    <div class="inner">
+                        <div class="div1">
+                            <h1 id="skills-title">Verto's Skills</h1>
+                        </div>
+                        <br>
+                        <div class="div2 borderrr">
+                            <div class="div7">
+                                <h3><u id="want-to-learn">Want to Learn</u></h3>
+                                <br>
+                                <p id="learn-description">If you're interested in extracurricular activities like playing chess or guitar, enroll in our courses!</p>
+                                <br>
+                                <div class="div3">
+                                    <a href="skill.html">Click Here</a>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="div4 borderrr">
+                            <div class="div7">
+                                <h3><u id="want-to-teach">Want to Teach</u></h3>
+                                <br>
+                                <p id="teach-description">If you have skills to share and want to teach in our campus, we would love to have you!</p>
+                                <br>
+                                <div class="div3">
+                                    <a href="form.html">Apply Here</a>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- login page -->
+    <div class="out">
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close" id="closeModal">&times;</span>
+                    <h2 class="modal-title">Login / Create Account</h2>
+                </div>
+                <div class="modal-body">
+                    <div id="formContainer">
+                        <div id="loginContainer">
+                            <h3>Login</h3>
+                            <form id="loginForm" onsubmit="alert('Logged in!'); return false;">
+                                <input type="text" placeholder="Email or Phone" required>
+                                <input type="password" placeholder="Password" required>
+                                <button type="submit" class="btn">Login</button>
+                            </form>
+                            <p>Don't have an account? <a href="#" id="switchToSignup">Create Account</a></p>
+                        </div>
+                        <div id="signupContainer" style="display:none;">
+                            <h3>Create Account</h3>
+                            <form id="signupForm" onsubmit="alert('Account created!'); return false;">
+                                <input type="text" placeholder="Name" required>
+                                <input type="text" placeholder="Email or Phone" required>
+                                <input type="password" placeholder="Password" required>
+                                <button type="submit" class="btn">Sign Up</button>
+                            </form>
+                            <p>Already have an account? <a href="#" id="switchToLogin">Login</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const translations = {
+            en: {
+                storeTitle: "Verto's Store",
+                buyTitle: "Buy Products",
+                buyDescription: "If you're looking to purchase any product but are concerned about high prices, this platform provides an excellent opportunity...",
+                sellTitle: "Sell Products",
+                sellDescription: "If you have any product that you no longer use, this platform allows you to sell it at a price you determine...",
+                skillsTitle: "Verto's Skills",
+                wantToLearn: "Want to Learn",
+                learnDescription: "If you're interested in extracurricular activities like playing chess or guitar, enroll in our courses!",
+                wantToTeach: "Want to Teach",
+                teachDescription: "If you have skills to share and want to teach in our campus, we would love to have you!"
+            },
+            es: {
+                storeTitle: "Tienda de Verto",
+                buyTitle: "Comprar Productos",
+                buyDescription: "Si estás buscando comprar un producto pero te preocupan los precios altos, esta plataforma ofrece una excelente oportunidad...",
+                sellTitle: "Vender Productos",
+                sellDescription: "Si tienes un producto que ya no usas, esta plataforma te permite venderlo al precio que determines...",
+                skillsTitle: "Habilidades de Verto",
+                wantToLearn: "Quieres Aprender",
+                learnDescription: "Si estás interesado en actividades extracurriculares como jugar al ajedrez o tocar la guitarra, ¡inscríbete en nuestros cursos!",
+                wantToTeach: "Quieres Enseñar",
+                teachDescription: "Si tienes habilidades que compartir y quieres enseñar en nuestro campus, ¡nos encantaría tenerte!"
+            },
+            fr: {
+                storeTitle: "Magasin de Verto",
+                buyTitle: "Acheter des Produits",
+                buyDescription: "Si vous cherchez à acheter un produit mais que vous êtes préoccupé par les prix élevés, cette plateforme offre une excellente opportunité...",
+                sellTitle: "Vendre des Produits",
+                sellDescription: "Si vous avez un produit que vous n'utilisez plus, cette plateforme vous permet de le vendre au prix que vous déterminez...",
+                skillsTitle: "Compétences de Verto",
+                wantToLearn: "Voulez Apprendre",
+                learnDescription: "Si vous êtes intéressé par des activités parascolaires comme jouer aux échecs ou à la guitare, inscrivez-vous à nos cours!",
+                wantToTeach: "Voulez Enseigner",
+                teachDescription: "Si vous avez des compétences à partager et que vous souhaitez enseigner sur notre campus, nous serions ravis de vous avoir!"
+            },
+            de: {
+                storeTitle: "Vertos Geschäft",
+                buyTitle: "Produkte Kaufen",
+                buyDescription: "Wenn Sie ein Produkt kaufen möchten, sich aber über hohe Preise Sorgen machen, bietet diese Plattform eine hervorragende Gelegenheit...",
+                sellTitle: "Produkte Verkaufen",
+                sellDescription: "Wenn Sie ein Produkt haben, das Sie nicht mehr verwenden, können Sie es über diese Plattform zu einem von Ihnen festgelegten Preis verkaufen...",
+                skillsTitle: "Vertos Fähigkeiten",
+                wantToLearn: "Möchten Lernen",
+                learnDescription: "Wenn Sie an außerschulischen Aktivitäten wie Schachspielen oder Gitarrespielen interessiert sind, melden Sie sich für unsere Kurse an!",
+                wantToTeach: "Möchten Lehren",
+                teachDescription: "Wenn Sie Fähigkeiten haben, die Sie teilen möchten, und in unserem Campus unterrichten möchten, würden wir uns freuen, Sie zu haben!"
+            },
+            zh: {
+                storeTitle: "维尔托的商店",
+                buyTitle: "购买产品",
+                buyDescription: "如果您想购买产品但担心价格过高，这个平台提供了一个极好的机会...",
+                sellTitle: "出售产品",
+                sellDescription: "如果您有不再使用的产品，这个平台允许您以自己设定的价格出售...",
+                skillsTitle: "维尔托的技能",
+                wantToLearn: "想学习",
+                learnDescription: "如果您对课外活动感兴趣，比如下棋或弹吉他，请报名参加我们的课程！",
+                wantToTeach: "想教授",
+                teachDescription: "如果您有技能想要分享并希望在我们的校园教授，我们很乐意欢迎您！"
+            },
+            te: {
+                storeTitle: "వెర్టో యొక్క దుకాణం",
+                buyTitle: "ఉత్పత్తులు కొనండి",
+                buyDescription: "మీరు ఏ ఉత్పత్తిని కొనాలనుకుంటే కానీ ధరలు అధికంగా ఉండవని మీరు ఆందోళన చెందుతున్నట్లయితే, ఈ వేదిక ఉత్తమ అవకాశాన్ని అందిస్తుంది...",
+                sellTitle: "ఉత్పత్తులు అమ్మండి",
+                sellDescription: "మీరు ఇకపై ఉపయోగించని ఏ ఉత్పత్తి ఉంటే, మీరు మీ నిర్ణయించిన ధరకు దానిని అమ్మడం ఈ వేదిక ద్వారా సాధ్యమవుతుంది...",
+                skillsTitle: "వెర్టో యొక్క నైపుణ్యాలు",
+                wantToLearn: "మీరెప్పుడైనా నేర్చుకోవాలనుకుంటున్నారు",
+                learnDescription: "మీరు చెస్ లేదా గిటార్ వాయించాలనుకుంటే వంటి ఉపాధ్యాయ చర్యలపై ఆసక్తి ఉంటే, మా కోర్సులకు నమోదు చేసుకోండి!",
+                wantToTeach: "మీరు బోధించాలనుకుంటున్నారా",
+                teachDescription: "మీకు పంచుకునే నైపుణ్యాలు ఉంటే మరియు మా క్యాంపస్‌లో బోధించాలనుకుంటే, మేము మీకు స్వాగతం పలుకుతాం!"
+            }
+        };
+
+        const languageSelector = document.getElementById('language-selector');
+        languageSelector.addEventListener('change', function() {
+            const selectedLang = this.value;
+            document.getElementById('store-title').innerText = translations[selectedLang].storeTitle;
+            document.getElementById('buy-title').innerText = translations[selectedLang].buyTitle;
+            document.getElementById('buy-description').innerText = translations[selectedLang].buyDescription;
+            document.getElementById('sell-title').innerText = translations[selectedLang].sellTitle;
+            document.getElementById('sell-description').innerText = translations[selectedLang].sellDescription;
+            
+            document.getElementById('skills-title').innerText = translations[selectedLang].skillsTitle;
+            document.getElementById('want-to-learn').innerText = translations[selectedLang].wantToLearn;
+            document.getElementById('learn-description').innerText = translations[selectedLang].learnDescription;
+            document.getElementById('want-to-teach').innerText = translations[selectedLang].wantToTeach;
+            document.getElementById('teach-description').innerText = translations[selectedLang].teachDescription;
+        });
+
+        // Modal functionality
+        const modal = document.getElementById('modal');
+        const openModal = document.getElementById('openModal');
+        const closeModal = document.getElementById('closeModal');
+
+        openModal.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        closeModal.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        const switchToSignup = document.getElementById('switchToSignup');
+        const switchToLogin = document.getElementById('switchToLogin');
+        const signupContainer = document.getElementById('signupContainer');
+        const loginContainer = document.getElementById('loginContainer');
+
+        switchToSignup.onclick = function() {
+            loginContainer.style.display = "none";
+            signupContainer.style.display = "block";
+        }
+
+        switchToLogin.onclick = function() {
+            signupContainer.style.display = "none";
+            loginContainer.style.display = "block";
+        }
+    </script>
+
+    <!-- footer -->
+    <footer>
+        <div class="foot-panel1">
+            <div class="sign">
+                <div class="signn">
+                    <div class="signnn">
+                        <a href="#" id="openModal" class="btn">Sign in</a>
+                    </div>
+                </div>
+                <p>New customer? <a href="#"><span>Click here.</span></a></p>
+            </div>
+        </div>
+
+        <div class="foot-panel2">
+            <div class="footbar1">
+                <h2>QUICK LINKS</h2>
+                <br>
+                <a href="blog.html">Blogs</a>
+                <br><br>
+                <a href="services.html">Services</a>
+                <br><br>
+                <a href="contact_us.html">ContactUs</a>
+                <br><br>
+                <a href="about_us.html">Terms & Conditions</a>
+                <br><br>
+                <a href="about_us.html">Privacy policy</a>
+            </div>
+            <div class="footbar2">
+                <h2>ADDRESS</h2>
+                <br>
+                <h3>Verto's need Pvt. Ltd.</h3>
+                <p>Delhi G.T. Road, Phagwara, Punjab</p>
+                <p>Lovely Professional University,</p>
+                <p>Jalandhar - Delhi G.T. Road,</p>
+                <p>Phagwara, Punjab (India) - 144411</p>
+            </div>
+            <div class="footbar3">
+                <h2>CUSTOMER SERVICE</h2>
+                <br>
+                <p>Call us on +91 9525032372</p>
+                <p>Email: shubh900688@gmail.com</p>
+            </div>
+            <div class="footbar4">
+                <h2>FOLLOW US ON</h2>
+                <br>
+                <div class="follow">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-google-play"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="foot-panel3">
+            <div class="logo2"></div>
+        </div>
+
+        <div class="foot-panel4">
+            <div class="copyright">
+                Copyright &copy; 2024 Verto's need Pvt. Ltd. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+}
+
+.vid {
+    position: fixed;
+    z-index: -100;
+}
+
+.check {
+    display: flex;
+    justify-content: center;
+    margin-top: 160px;
+    color: white;
+    font-size: x-large;
+}
+
+.upper {
+    padding-top: 10vh;
+    
+    input {
+        width: 380px;
+        height: 42px;
+        background-color: whitesmoke;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        padding-left: 20px;
+        
+    }
+
+    button {
+        width: 50px;
+        height: 46px;
+        background-color: whitesmoke;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+}
+.outer {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+    width: 33%;
+    border-radius: 25px;
+    
+    
+}
+
+.back {
+    z-index: -5;
+    filter: blur(7px);
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 33%;
+    height: 100px;
+    position: absolute;
+    border-radius: 25px;
+}
+
+
+.out {
+    display: flex;
+    justify-content: center;
+    z-index: -5;
+}
+
+.weather {
+    display: none;
+}
+
+.weath {
+    display: flex;
+    justify-content: center;
+    margin-top: -15px;
+
+}
+
+.weat {
+    display: flex;
+    justify-content: center;
+    font-size:xx-large;
+}
+
+.wea {
+    display: flex;
+    justify-content: center;
+    font-size:x-large;
+}
+
+.error {
+    display: none;
+}
+
+.center {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+.bak {
+    z-index: -5;
+    filter: blur(7px);
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    border-radius: 25px;
+}
+
+
+.backk {
+    z-index: -5;
+    filter: blur(7px);
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 250px;
+    margin-top: 10px;
+    height: 350px;
+    position: absolute;
+    border-radius: 25px;
+}
+
+.details {
+    display: flex;
+    justify-content:space-around;
+    font-size: x-large;
+    font-weight: 750;
+}
+
+.backkk {
+    z-index: -5;
+    filter: blur(7px);
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 170px;
+    height: 170px;
+    margin: -20px;
+    position: absolute;
+    border-radius: 25px;
+}
+
+.wind {
+    font-weight: 800;
+}
+
+.humidity {
+    font-weight: 800;
+}

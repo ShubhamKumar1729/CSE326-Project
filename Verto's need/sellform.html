@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Submission Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="sellform.css">
+</head>
+<body>
+    <div class="bodyy">
+        <header>
+            <div class="fixed">
+                <div class="navbar">
+    
+                    <div class="logo"></div>
+                    
+                    <div class="head">
+                        <a href="home.html">Home</a>
+                        <a href="blog.html">Blogs</a>
+                        <a href="services.html">Services</a>
+                        <a href="about_us.html">AboutUs</a>
+                        <a href="contact_us.html">ContactUs</a>
+                    </div>
+        
+                    <div class="lang">
+                        <p>Choose your language</p>
+                        <select class="select">
+                            <option>English</option>
+                        </select>
+                    </div>
+        
+                    <div class="nav-signin borderr">
+                        <p><span>Hello, sign in</span></p>
+                        <p class="nav-second">Your Account</p>
+                    </div>
+        
+                </div>
+            </div>
+        </header>
+        <div class="outcontainer">
+            <div class="container">
+                <h1><u>Product Details Form</u></h1>
+                <form onsubmit="alert('Your product details are submitted successfully! We will be uploaded on Verto\'s store very soon.'); return false;">
+                    <label for="title">Product Title:</label>
+                    <input type="text" id="title" name="title" required>
+        
+                    <label for="description">Product Description:</label>
+                    <textarea id="description" name="description" rows="4" required></textarea>
+        
+                    <label for="features">Detailed Features and Specifications:</label>
+                    <textarea id="features" name="features" rows="4" required></textarea>
+        
+                    <label for="benefits">Benefits of the Product:</label>
+                    <textarea id="benefits" name="benefits" rows="4"></textarea>
+        
+                    <label for="usage">Usage Instructions:</label>
+                    <textarea id="usage" name="usage" rows="4"></textarea>
+        
+                    <label for="images">Upload Images:</label>
+                    <input type="file" id="images" name="images" multiple accept="image/*">
+        
+                    <label for="price">Price:</label>
+                    <input type="number" id="price" name="price" step="0.01" required>
+        
+                    <label for="discount">Discount (if any):</label>
+                    <input type="number" id="discount" name="discount" step="0.01">
+        
+                    <label for="category">Category:</label>
+                    <input type="text" id="category" name="category" required>
+        
+                    <label for="shipping">Shipping Information:</label>
+                    <textarea id="shipping" name="shipping" rows="4" required></textarea>
+        
+                    <label for="return-policy">Return Policy:</label>
+                    <textarea id="return-policy" name="return-policy" rows="4" required></textarea>
+        
+                    <label for="payment">Payment Methods:</label>
+                    <textarea id="payment" name="payment" rows="4" required></textarea>
+        
+                    <label for="stock">Stock Availability:</label>
+                    <input type="number" id="stock" name="stock" required>
+        
+                    <label for="reviews">Customer Reviews:</label>
+                    <textarea id="reviews" name="reviews" rows="4"></textarea>
+        
+                    <label for="contact">Contact Information:</label>
+                    <textarea id="contact" name="contact" rows="4" required></textarea>
+        
+                    <label for="additional">Additional Details:</label>
+                    <textarea id="additional" name="additional" rows="4"></textarea>
+                    <div class="submit">
+                        <div class="button">
+                            <button type="submit">Submit Product</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="foot-panel1">
+                <div class="sign">
+                    <div class="signn">
+                        <div class="signnn">
+                            <a href="#">Sign in</a>
+                        </div>
+                    </div>
+                    <p>New customer? <a href="#"><span>Click here.</span></a></p>
+                </div>
+            </div>
+    
+            <div class="foot-panel2">
+                <div class="footbar1">
+                    <h2>QUICK LINKS</h2>
+                    <br>
+                    <a href="blog.html">Blogs</a>
+                    <br><br>
+                    <a href="services.html">Services</a>
+                    <br><br>
+                    <a href="contact_us.html">ContactUs</a>
+                    <br><br>
+                    <a href="about_us.html">Terms & Conditions</a>
+                    <br><br>
+                    <a href="about_us.html">Privacy policy</a>
+                </div>
+                <div class="footbar2">
+                    <h2>ADDRESS</h2>
+                    <br>
+                    <h3>Verto's need Pvt. Ltd.</h3>
+                    <p>Delhi G.T. Road, Phagwara, Punjab</p>
+                    <p>Lovely Professional University,</p>
+                    <p>Jalandhar - Delhi G.T. Road,</p>
+                    <p>Phagwara, Punjab (India) - 144411</p>
+                </div>
+                <div class="footbar3">
+                    <h2>CUSTOMER SERVICE</h2>
+                    <br>
+                    <p>Call us on +91 9525032372</p>
+                    <p>Email: shubh900688@gmail.com</p>
+                </div>
+                <div class="footbar4">
+                    <h2>FOLLOW US ON</h2>
+                    <br>
+                    <div class="follow">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-google-play"></i>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="foot-panel3">
+                <div class="logo2"></div>
+            </div>
+    
+            <div class="foot-panel4">
+                <div class="copyright">
+                    Copyright &copy; 2024 Verto's need Pvt. Ltd. All rights reserved.
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Submission Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="sellform.css">
+    <style>
+        .radio-group {
+            display: flex;
+            gap: 10px;
+        }
+        .radio-group input[type="radio"] {
+            display: none;
+        }
+        .radio-group label {
+            padding: 10px 15px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .radio-group input[type="radio"]:checked + label {
+            background-color: #ff4500; /* orangered */
+            color: white; /* text color when selected */
+        }
+    </style>
+</head>
+<body>
+    <div class="bodyy">
+        <header>
+            <div class="fixed">
+                <div class="navbar">
+                    <div class="logo"></div>
+                    <div class="head">
+                        <a href="home.html">Home</a>
+                        <a href="blog.html">Blogs</a>
+                        <a href="services.html">Services</a>
+                        <a href="about_us.html">AboutUs</a>
+                        <a href="contact_us.html">ContactUs</a>
+                    </div>
+                    <div class="lang">
+                        <p>Choose your language</p>
+                        <select class="select">
+                            <option>English</option>
+                        </select>
+                    </div>
+                    <div class="nav-signin borderr">
+                        <p><span>Hello, sign in</span></p>
+                        <p class="nav-second">Your Account</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="outcontainer">
+            <div class="container">
+                <h1><u>Skill Submission Form</u></h1>
+                <form onsubmit="alert('We got your information, and your skill platform will be created on Verto\'s Skill very soon!'); return false;">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="profession">Profession:</label>
+                    <input type="text" id="profession" name="profession" required>
+
+                    <label for="skills">Skills:</label>
+                    <textarea id="skills" name="skills" rows="4" required></textarea>
+
+                    <label for="topics">What You Will Offer:</label>
+                    <textarea id="topics" name="topics" rows="4" required></textarea>
+
+                    <label>Year of Study:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="year1" name="year" value="1st year" required>
+                        <label for="year1">1st Year</label>
+                        <input type="radio" id="year2" name="year" value="2nd year" required>
+                        <label for="year2">2nd Year</label>
+                        <input type="radio" id="year3" name="year" value="3rd year" required>
+                        <label for="year3">3rd Year</label>
+                        <input type="radio" id="year4" name="year" value="4th year" required>
+                        <label for="year4">4th Year</label>
+                    </div>
+
+                    <label for="contact-number">Contact Number:</label>
+                    <input type="tel" id="contact-number" name="contact-number" pattern="[0-9]*" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="amount">Amount Charged:</label>
+                    <input type="number" id="amount" name="amount" step="0.01" required>
+
+                    <label for="additional">Additional Details:</label>
+                    <textarea id="additional" name="additional" rows="4"></textarea>
+
+                    <div class="submit">
+                        <div class="button">
+                            <button type="submit">Submit Information</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <div class="foot-panel1">
+                <div class="sign">
+                    <div class="signn">
+                        <div class="signnn">
+                            <a href="#">Sign in</a>
+                        </div>
+                    </div>
+                    <p>New customer? <a href="#"><span>Click here.</span></a></p>
+                </div>
+            </div>
+
+            <div class="foot-panel2">
+                <div class="footbar1">
+                    <h2>QUICK LINKS</h2>
+                    <br>
+                    <a href="blog.html">Blogs</a>
+                    <br><br>
+                    <a href="services.html">Services</a>
+                    <br><br>
+                    <a href="contact_us.html">ContactUs</a>
+                    <br><br>
+                    <a href="about_us.html">Terms & Conditions</a>
+                    <br><br>
+                    <a href="about_us.html">Privacy policy</a>
+                </div>
+                <div class="footbar2">
+                    <h2>ADDRESS</h2>
+                    <br>
+                    <h3>Verto's need Pvt. Ltd.</h3>
+                    <p>Delhi G.T. Road, Phagwara, Punjab</p>
+                    <p>Lovely Professional University,</p>
+                    <p>Jalandhar - Delhi G.T. Road,</p>
+                    <p>Phagwara, Punjab (India) - 144411</p>
+                </div>
+                <div class="footbar3">
+                    <h2>CUSTOMER SERVICE</h2>
+                    <br>
+                    <p>Call us on +91 9525032372</p>
+                    <p>Email: shubh900688@gmail.com</p>
+                </div>
+                <div class="footbar4">
+                    <h2>FOLLOW US ON</h2>
+                    <br>
+                    <div class="follow">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-google-play"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="foot-panel3">
+                <div class="logo2"></div>
+            </div>
+
+            <div class="foot-panel4">
+                <div class="copyright">
+                    Copyright &copy; 2024 Verto's need Pvt. Ltd. All rights reserved.
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
